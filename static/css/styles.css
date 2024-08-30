@@ -1,0 +1,250 @@
+/* Estilos generales */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    background-color: #070808fa;
+    color: #333;
+}
+
+h1 {
+    color: #333;
+    margin-bottom: 1rem;
+}
+
+/* Barra de navegación */
+.navbar {
+    background-color: #021329f1;
+    padding: 1rem;
+    position: fixed;
+    width: 100%;
+    top: 0;
+    left: 0;
+    z-index: 1000;
+}
+
+.navbar-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    max-width: 1500px;
+    margin: 0 auto;
+}
+
+.navbar-logo {
+    color: #ffffff;
+    font-size: 1.5rem;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.navbar-menu {
+    list-style: none;
+    display: flex;
+    gap: 1rem;
+    margin: 0;
+    padding: 0;
+}
+
+.navbar-menu a{
+    font-size: 20px;
+}
+
+.navbar-menu li {
+    margin: 0;
+}
+
+.navbar-link {
+    color: #1876e9;
+    text-decoration: none;
+    font-size: 1rem;
+    padding: 0.5rem 1rem;
+    border-radius: 5px;
+    transition: background-color 0.3s;
+}
+
+.navbar-link:hover {
+    background-color: #1a242f;
+}
+
+/* Contenido principal */
+.main-content {
+    padding: 1rem 1rem;
+    margin-top: 70px; /* Ajustar por la altura de la navbar */
+    max-width: 1500px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.main-biography h2{
+    color:#ebeced;
+    font-size: 30px;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
+.main-biography p{
+    color:#ebeced;
+    font-size: 21px;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
+/* Footer */
+.footer {
+    background-color: #232F3E;
+    color: #fff;
+    text-align: center;
+    padding: 1rem 0;
+    position: relative;
+    bottom: 0;
+    width: 100%;
+}
+
+.weather-header {
+    background: #f8fbff4e;
+    border-radius: 10px;
+    width: 100%;
+    text-align: center;
+    padding: 10px 0;
+    margin-bottom: 20px;
+    color: #ffffff;
+    font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
+}
+
+.weather-header .header-content {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.weather-header .header-content svg {
+    margin-right: 10px; /* Espacio entre el logo y el texto */
+}
+
+.weather-header h2 {
+    color: #ffffff;
+    font-size: 36px;
+    text-align: center;
+    margin: 0;
+}
+
+.weather-info {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center; /* Alinea verticalmente los elementos */
+    justify-content: space-between; /* Distribuye el espacio horizontalmente */
+}
+
+.weather-details {
+    margin: 10px 0;
+    color: #f1f1f1;
+    font-weight: bold;
+    font-size: 25px;
+}
+
+.weather-icon {
+    margin-right: 5px; /* Por ejemplo, establece un margen de 10px a la derecha del weather-icon */
+    margin-left: 100px;
+}
+
+.news-image {
+    max-width: 100%;
+    height: auto;
+}
+
+
+.weather-news-container {
+    display: block;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    width: 100%; /* Asegurar que ocupe todo el ancho del contenedor */
+    max-width: 1800px;
+    margin: 0 auto;
+}
+
+.weather-card {
+    background: url("../images/fond.jpg") no-repeat center center;
+    background-size: cover;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    max-width: 1700px;
+    padding: 20px;
+    margin-bottom: 20px;
+}
+
+.container-news {
+    padding: 20px;
+    background-color: #f9f9f9;
+    border-radius: 10px;
+    max-width: 1400px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.container-news-2 {
+    padding: 20px;
+    background-color: #000000b0;
+    border-radius: 10px;
+    max-width: 1700px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.highlight-title {
+    color: #abbccd;
+    text-align: center;
+    font-size: 1.8em;
+    font-family: 'Arial', sans-serif;
+    padding: 10px;
+    background-color: #bc915093;
+    border-radius: 10px;
+    width: 99%;
+    margin: 0 auto;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.highlight-title-2 {
+    color: #ebeced;
+    text-align: center;
+    font-size: 2.1em;
+    font-family: 'Arial', sans-serif;
+    padding: 10px;
+    background-color: #edb25900;
+    border-radius: 10px;
+    width: 70%;
+    margin: 0 auto;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.news {
+    list-style-type: none;
+    padding: 0;
+}
+
+.news li {
+    margin-bottom: 20px;
+}
+
+.news h2 {
+    color: #d62e1f;
+    font-size: 1.7em;
+}
+
+.news p {
+    color: #f4f1f1;
+    font-size: 22px;
+}
+
+.news a {
+    color: #007bff;
+    text-decoration: none;
+}
+
+.news a:hover {
+    text-decoration: underline;
+}
+
+.interactive-bar {
+    border: none; /* Eliminar el borde por defecto */
+    height: 5px; /* Establecer la altura de la barra */
+    background-color: #267fde; /* Color de la barra */
+    margin: 20px 0; /* Margen arriba y abajo para separarla visualmente */
+}
